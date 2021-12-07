@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-ico" href="img\the_pale_imp.jpg">
+	<title>Альбомы</title>
+	<link rel="stylesheet" href="kursach.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header_container _container">
+			<a href="cursach_main.html" class="header_logo">
+				mYMusic
+			</a>
+			<nav class="header_menu">
+				<ul class="menu_list">
+					<li class="menu_slot">
+						<a href="authors.html" class="menu_link">Исполнители</a>
+					</li>
+					<li class="menu_slot">
+						<a href="albums.html" class="menu_link">Альбомы</a>
+					</li>
+					<li class="menu_slot">
+						<a href="gallery.html" class="menu_link">Галерея</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+	</div>
+	<div class="header_container _container"></div>
+	<div class="card" onclick="myFunction()">
+		<h2 class="card_title">!!!(нажмите на меня)</h2>
+		
+	</div>
+	<script type="text/javascript">
+		function myFunction(){
+			alert("В скором времени здесь появится еще несколько альбомов и возможность прослушивать композиции в режиме плеера. Следите за обновлениями!");
+		}
+	</script>
+	<div class="header_container _container"></div>
+	<div class="album_card">
+		<h2 class="card_title">Playboi Carti - Die Lit</h2>
+		<img class="album_cover" src="albums\die_lit\die_lit_cover.jpeg">
+		<audio controls src="albums\die_lit\Playboi Carti - Long Time (Intro).mp3"></audio>
+	<audio id="1" controls src="albums\die_lit\RIP.mp3"></audio>
+	<audio id="2" controls src="albums\die_lit\Playboi Carti and Skepta - Lean 4 Real.mp3"></audio>
+	<audio id="3" controls src="albums\die_lit\Playboi Carti - Old Money.mp3"></audio>
+	<audio id="4" controls src="albums\die_lit\Playboi Carti and Travis Scott - Love Hurts.mp3"></audio>
+	<audio id="5" controls src="albums\die_lit\Playboi Carti and Lil Uzi Vert - Shoota.mp3"></audio>
+	<audio id="6" controls src="albums\die_lit\Playboi Carti and Pi'erre Bourne - Right Now.mp3"></audio>
+	<audio id="7" controls src="albums\die_lit\Playboi Carti and Nicki Minaj - Poke It Out.mp3"></audio>
+	<audio id="8" controls src="albums\die_lit\Playboi Carti - Home (Kod).mp3"></audio>
+	<audio id="9" controls src="albums\die_lit\Playboi Carti and Bryson Tiller - Fell In Luv.mp3"></audio>
+	<audio id="10" controls src="albums\die_lit\Playboi Carti - Foreign.mp3"></audio>
+	<audio id="11" controls src="albums\die_lit\Playboi Carti - Pull Up.mp3"></audio>
+	<audio id="12" controls src="albums\die_lit\Playboi Carti and Chief Keef - Mileage.mp3"></audio>
+	<audio id="13" controls src="albums\die_lit\Playboi Carti - Flatbed Freestyle.mp3"></audio>
+	<audio id="14" controls src="albums\die_lit\Playboi Carti and Gunna - No Time.mp3"></audio>
+	<audio id="15" controls src="albums\die_lit\Playboi Carti and Red Coldhearted - Middle Of The Summer.mp3"></audio>
+	<audio id="16" controls src="albums\die_lit\Playboi Carti and Young Thug - Choppa Won't Miss.mp3"></audio>
+	<audio id="17" controls src="albums\die_lit\Playboi Carti and Young Thug - R.i.p. Fredo (Notice Me).mp3"></audio>
+	<audio id="18" controls src="albums\die_lit\Playboi Carti and Pi'erre Bourne - Top.mp3"></audio>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var audios = document.getElementsByTagName("audio");
+
+	for (var i = 0; i < audios.length; i++) {
+		audios[i].onended = function() {
+			console.log("Song " + i + " ended");
+		};
+	}
+</script>
+<script src="index.js"/>
+<footer>
+		Candy CarteL 2019 -  &#8734
+	</footer>
+</html>
